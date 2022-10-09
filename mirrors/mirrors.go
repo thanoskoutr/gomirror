@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
 	"math"
 	"net/http"
@@ -14,6 +15,7 @@ import (
 	"time"
 
 	"github.com/go-ping/ping"
+	"github.com/thanoskoutr/gomirror/utils"
 )
 
 const (
@@ -22,13 +24,13 @@ const (
 
 type Mirror struct {
 	// TODO: Make it enum or Locale
-	Country     string
-	CountryCode string
-	URL         *url.URL
+	Country     string   `json:"country,omitempty"`
+	CountryCode string   `json:"country_code,omitempty"`
+	URL         *url.URL `json:"url"`
 	// TODO: Make it enum
-	Protocol      Protocol
-	Architectures string
-	Statistics    *MirrorStatistics
+	Protocol      Protocol          `json:"protocol"`
+	Architectures string            `json:"architectures,omitempty"`
+	Statistics    *MirrorStatistics `json:"statistics,omitempty"`
 }
 
 func (m Mirror) String() string {
@@ -54,6 +56,42 @@ func (m *Mirror) MarshalJSON() ([]byte, error) {
 		Architectures: m.Architectures,
 		Statistics:    m.Statistics,
 	})
+}
+
+func (m *Mirror) UnmarshalJSON(data []byte) error {
+	var v map[string]interface{}
+	var err error
+	if err = json.Unmarshal(data, &v); err != nil {
+		return err
+	}
+	if v["country"] != nil {
+		m.Country = v["country"].(string)
+	}
+	if v["country_code"] != nil {
+		m.CountryCode = v["country_code"].(string)
+	} else {
+		m.CountryCode = utils.GetCountryCode(m.Country)
+	}
+	if v["url"] != nil {
+		m.URL, err = url.Parse(v["url"].(string))
+		if err != nil {
+			return err
+		}
+	} else {
+		m.URL, _ = url.Parse("")
+	}
+	if v["protocol"] != nil {
+		m.Protocol, err = ToProtocol(v["protocol"].(string))
+		if err != nil {
+			return err
+		}
+	} else {
+		m.Protocol, err = ToProtocol(m.URL.Scheme)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 // TODO: Error handling
@@ -225,11 +263,43 @@ func ToMirrorSource(source string) (MirrorSource, error) {
 }
 
 // Read URL mirrors from JSON file
-// TODO: Implement it
 // TODO: File location
 func ReadMirrorsJSON(filename string) []Mirror {
-	log.Fatal("Unimplemented function: ReadMirrorsJSON")
-	return nil
+	// Open file
+	file, err := os.Open(filename)
+	if err != nil {
+		log.Fatal("Can not read mirrors: ", err)
+	}
+	defer file.Close()
+	// Read whole file
+	mirrorsBytes, err := io.ReadAll(file)
+	if err != nil {
+		log.Fatal("Can not read mirrors: ", err)
+	}
+	// Parse file as JSON
+	var mirrorsJson map[string]interface{}
+	err = json.Unmarshal(mirrorsBytes, &mirrorsJson)
+	if err != nil {
+		log.Fatal("Can not parse mirrors list: ", err)
+	}
+	// Get URLs array
+	if mirrorsJson["urls"] == nil {
+		log.Fatalf("Can not parse mirrors list: %v", mirrorsJson)
+	}
+	urls := mirrorsJson["urls"].([]interface{})
+	// Create Mirrors array
+	mirrorsList := make([]Mirror, len(urls))
+	// Convert URLs object back to JSON
+	urlsMarshaled, err := json.Marshal(urls)
+	if err != nil {
+		log.Fatal("Can not parse mirrors url list: ", err)
+	}
+	// Parse URLs as Mirrors array
+	err = json.Unmarshal(urlsMarshaled, &mirrorsList)
+	if err != nil {
+		log.Fatal("Can not parse mirrors list: ", err)
+	}
+	return mirrorsList
 }
 
 // Read URL mirrors from TXT file

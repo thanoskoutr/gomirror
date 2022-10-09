@@ -1,4 +1,4 @@
-package mirrors
+package distributions
 
 import (
 	"encoding/json"
@@ -8,11 +8,13 @@ import (
 	"sort"
 	"sync"
 	"time"
+
+	"github.com/thanoskoutr/gomirror/mirrors"
 )
 
 type DistributionMirrors struct {
-	Distribution Distributor
-	Mirrors      []*Mirror
+	Distribution Distributor       `json:"distribution"`
+	Mirrors      []*mirrors.Mirror `json:"urls"`
 }
 
 func (d DistributionMirrors) String() string {
@@ -21,20 +23,37 @@ func (d DistributionMirrors) String() string {
 
 func (d *DistributionMirrors) MarshalJSON() ([]byte, error) {
 	return json.Marshal(&struct {
-		Distribution string    `json:"distribution"`
-		Mirrors      []*Mirror `json:"urls"`
+		Distribution string            `json:"distribution"`
+		Mirrors      []*mirrors.Mirror `json:"urls"`
 	}{
 		Distribution: d.Distribution.Name(),
 		Mirrors:      d.Mirrors,
 	})
 }
 
+func (d *DistributionMirrors) UnmarshalJSON(data []byte) error {
+	var v map[string]interface{}
+	var err error
+	if err = json.Unmarshal(data, &v); err != nil {
+		return err
+	}
+	if v["distribution"] != nil {
+		d.Distribution, err = ToDistribution(v["distribution"].(string))
+		if err != nil {
+			return err
+		}
+	}
+	// if v["urls"] != nil {}
+
+	return nil
+}
+
 // Replaces Mirror list (don't care if empty or not)
-func (d *DistributionMirrors) UpdateMirrors(source MirrorSource, filename string) {
-	mirrors := d.Distribution.GetMirrors(source, filename)
-	d.Mirrors = make([]*Mirror, len(mirrors))
+func (d *DistributionMirrors) UpdateMirrors(source mirrors.MirrorSource, filename string) {
+	mirrorsList := d.Distribution.GetMirrors(source, filename)
+	d.Mirrors = make([]*mirrors.Mirror, len(mirrorsList))
 	// Create shallow copy and assign to slice of pointers
-	for i, mirror := range mirrors {
+	for i, mirror := range mirrorsList {
 		v := mirror
 		d.Mirrors[i] = &v
 	}
@@ -58,10 +77,10 @@ func (d *DistributionMirrors) UpdateMirrorStatistics(rounds int64) {
 		// For each mirror create a goroutine for parallel requests
 		for i, mirror := range d.Mirrors {
 			if mirror.Statistics == nil {
-				mirror.Statistics = &MirrorStatistics{}
+				mirror.Statistics = &mirrors.MirrorStatistics{}
 			}
 			// Make request and update mirror statistics
-			go func(round int64, i int, mirror *Mirror) {
+			go func(round int64, i int, mirror *mirrors.Mirror) {
 				totalTime := mirror.GetTime()
 				fmt.Fprintf(os.Stderr, "Mirror %v: Country: %v, URL: %v, Time: %v\n", i, mirror.Country, mirror.URL, totalTime)
 				d.Mirrors[i].Statistics.ResponseTimeHTTP = totalTime
@@ -102,9 +121,9 @@ func (d *DistributionMirrors) SortMirrors() {
 }
 
 // TODO: Find based on other factors
-func (d *DistributionMirrors) BestMirror() Mirror {
+func (d *DistributionMirrors) BestMirror() mirrors.Mirror {
 	bestTime := time.Duration(math.MaxInt64)
-	bestMirror := Mirror{}
+	bestMirror := mirrors.Mirror{}
 	for _, mirror := range d.Mirrors {
 		if mirror.Statistics == nil {
 			continue

@@ -1,0 +1,30 @@
+{
+  "distribution": "Ubuntu",
+  "urls": [
+    {
+      "country": "Argentina",
+      "url": "https://mirrors.dc.clear.net.ar/ubuntu/",
+      "protocol": "https"
+    },
+    {
+      "url": "http://mirrors.dc.clear.net.ar/ubuntu/",
+      "protocol": "http"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "protocol": "ftp"
+    },
+    {
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "http://ftp.cc.uoc.gr/mirrors/linux/ubuntu/packages/"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "https://mirror.ubuntu.ikoula.com/",
+      "protocol": "https"
+    }
+  ]
+}

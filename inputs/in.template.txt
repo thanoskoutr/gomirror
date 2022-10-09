@@ -1,0 +1,5 @@
+https://mirrors.dc.clear.net.ar/ubuntu/
+http://mirrors.dc.clear.net.ar/ubuntu/
+ftp://mirror.kumi.systems/ubuntu/
+http://ftp.cc.uoc.gr/mirrors/linux/ubuntu/packages/
+https://mirror.ubuntu.ikoula.com/

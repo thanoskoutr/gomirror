@@ -20,7 +20,7 @@ const (
 func main() {
 	// ------------------------------------ CONFIGURATION
 	// Initialize
-	var distroMirrors *mirrors.DistributionMirrors = &mirrors.DistributionMirrors{}
+	var distroMirrors *distributions.DistributionMirrors = &distributions.DistributionMirrors{}
 	var country string
 	var countryCode string
 	var mirrorSourceType mirrors.MirrorSource
@@ -49,15 +49,10 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Select a distribution to start\n")
 		os.Exit(1)
 	}
-	switch *distro {
-	case "Ubuntu":
-		distroMirrors.Distribution = distributions.Ubuntu{}
-	case "Debian":
-		distroMirrors.Distribution = distributions.Debian{}
-	case "Arch":
-		distroMirrors.Distribution = distributions.Arch{}
-	default:
-		fmt.Fprintf(os.Stderr, "Unsupported distribution: %v\n", *distro)
+	var err error
+	distroMirrors.Distribution, err = distributions.ToDistribution(*distro)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "%v\n", err)
 		os.Exit(1)
 	}
 
@@ -72,7 +67,7 @@ func main() {
 	fmt.Fprintf(os.Stderr, "Country Code: %v\n", countryCode)
 
 	// Validate Mirrors Source Type
-	mirrorSourceType, err := mirrors.ToMirrorSource(*sourceType)
+	mirrorSourceType, err = mirrors.ToMirrorSource(*sourceType)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Unsupported source type: %v\n", *sourceType)
 		os.Exit(1)
