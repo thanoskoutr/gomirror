@@ -1,0 +1,158 @@
+package main
+
+import (
+	"flag"
+	"fmt"
+	"net/url"
+	"os"
+
+	"github.com/thanoskoutr/gomirror/distributions"
+	"github.com/thanoskoutr/gomirror/mirrors"
+	"github.com/thanoskoutr/gomirror/utils"
+)
+
+const (
+	STATISTICS_ROUNDS = 1
+)
+
+func main() {
+	// ------------------------------------ CONFIGURATION
+	// Initialize
+	var distroMirrors *mirrors.DistributionMirrors = &mirrors.DistributionMirrors{}
+	var country string
+	var countryCode string
+	var mirrorSourceType mirrors.MirrorSource
+	var mirrorSourceFile string
+
+	// TODO: Add cobra for more configurable CLI
+	// TODO: Distro should be required argument
+	// TODO: Add flag for displaying configuration options
+	// Supported Flags
+	var (
+		distro       = flag.String("distro", "", "The distribution to rank mirrors. Supported: \"Ubuntu\", \"Debian\", \"Arch\"")
+		mode         = flag.String("mode", "rank", "Mode of operation. Supported: \"rank\": Rank all mirrors based on your location, \"best\": Find best mirror based on your location")
+		sourceType   = flag.String("source", "http", "The type of source for mirror list. Supported: \"http\", \"json\", \"txt\"")
+		sourceFile   = flag.String("file", "", "The file with the mirrors. Valid only for \"json\", \"txt\" source")
+		countryInput = flag.String("country", "", "The country where the system is located")
+		jsonExport   = flag.Bool("json", false, "Export results in JSON format")
+		// output = flag.String("output", "", "Write results to file")
+	)
+	// Parse Flags
+	flag.Parse()
+	fmt.Fprintf(os.Stderr, "Configuration Options:\n")
+	fmt.Fprintf(os.Stderr, "----------------------\n")
+
+	// Validate Distribution
+	if len(*distro) == 0 {
+		fmt.Fprintf(os.Stderr, "Select a distribution to start\n")
+		os.Exit(1)
+	}
+	switch *distro {
+	case "Ubuntu":
+		distroMirrors.Distribution = distributions.Ubuntu{}
+	case "Debian":
+		distroMirrors.Distribution = distributions.Debian{}
+	case "Arch":
+		distroMirrors.Distribution = distributions.Arch{}
+	default:
+		fmt.Fprintf(os.Stderr, "Unsupported distribution: %v\n", *distro)
+		os.Exit(1)
+	}
+
+	// Validate Country
+	if len(*countryInput) == 0 {
+		country = utils.GetCountry()
+	} else {
+		country = *countryInput
+	}
+	countryCode = utils.GetCountryCode(country)
+	fmt.Fprintf(os.Stderr, "Country: %v\n", country)
+	fmt.Fprintf(os.Stderr, "Country Code: %v\n", countryCode)
+
+	// Validate Mirrors Source Type
+	mirrorSourceType, err := mirrors.ToMirrorSource(*sourceType)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Unsupported source type: %v\n", *sourceType)
+		os.Exit(1)
+	}
+	fmt.Fprintf(os.Stderr, "Mirror Source Type: %v\n", mirrorSourceType)
+
+	// Validate Mirrors Source file
+	mirrorSourceFile = *sourceFile
+	if mirrorSourceType != mirrors.SourceHTTP {
+		if len(mirrorSourceFile) == 0 {
+			fmt.Fprintf(os.Stderr, "No Mirror file specified\n")
+			os.Exit(1)
+		}
+		fmt.Fprintf(os.Stderr, "Mirror Source File: %v\n", mirrorSourceFile)
+
+	}
+
+	// Validate Mode
+	switch *mode {
+	case "rank":
+	case "best":
+		fmt.Fprintf(os.Stderr, "Operation Mode: %v\n", *mode)
+
+	default:
+		fmt.Fprintf(os.Stderr, "Unsupported mode: %v\n", *mode)
+		os.Exit(1)
+	}
+
+	// Validate Export
+	if *jsonExport {
+		fmt.Fprintf(os.Stderr, "Export option: JSON\n")
+		fmt.Fprintf(os.Stderr, "Unsupported export option\n")
+		os.Exit(1)
+	}
+	fmt.Fprintf(os.Stderr, "----------------------\n")
+
+	// ------------------------------------ OPERATIONS
+	// Add Mirrors manually (for testing)
+	distroMirrors.Mirrors = []*mirrors.Mirror{
+		{
+			Country:     "Armenia",
+			CountryCode: "AM",
+			URL:         &url.URL{Scheme: "http", Host: "ftp.am.debian.org", Path: "debian/"},
+			Protocol:    21,
+		},
+		{
+			Country:     "Australia",
+			CountryCode: "AU",
+			URL:         &url.URL{Scheme: "http", Host: "ftp.au.debian.org", Path: "debian/"},
+			Protocol:    21,
+		},
+	}
+	// Update Mirrors
+	distroMirrors.UpdateMirrors(mirrorSourceType, mirrorSourceFile)
+
+	// DEBUG: Print Mirrors
+	// fmt.Printf("Mirrors: %v\n", distroMirrors)
+	// fmt.Printf("Mirrors Len: %v\n", len(distroMirrors.Mirrors))
+	// DEBUG: Print Mirrors JSON
+	// distroMirrorsJson, _ := json.Marshal(distroMirrors)
+	// fmt.Println(string(distroMirrorsJson))
+
+	// Update Statistics
+	distroMirrors.UpdateMirrorStatistics(STATISTICS_ROUNDS)
+	// DEBUG: Print Mirrors
+	// fmt.Printf("Mirrors (Updated): %v\n", distroMirrors)
+
+	switch *mode {
+	case "rank":
+		// Sort Mirrors
+		distroMirrors.SortMirrors()
+		fmt.Printf("Ranked Mirrors:\n")
+		for i, distroMirror := range distroMirrors.Mirrors {
+			fmt.Printf("%v: %v %v %v\n", i, distroMirror.Country, distroMirror.URL, distroMirror.Statistics.AvgResponseTimeHTTP)
+		}
+		// Print Updated Mirrors JSON
+		// distroMirrorsJson, _ = json.Marshal(distroMirrors)
+		// fmt.Println(string(distroMirrorsJson))
+	case "best":
+		// Print best Mirror (based on HTTP response)
+		bestMirror := distroMirrors.BestMirror()
+		fmt.Printf("Best Mirror (relative):\n")
+		fmt.Printf("%v\n", bestMirror)
+	}
+}
