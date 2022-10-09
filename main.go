@@ -1,6 +1,8 @@
 package main
 
 import (
+	"encoding/csv"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"net/url"
@@ -27,6 +29,7 @@ func main() {
 	// TODO: Add cobra for more configurable CLI
 	// TODO: Distro should be required argument
 	// TODO: Add flag for displaying configuration options
+	// TODO: Add flag for writing to file
 	// Supported Flags
 	var (
 		distro       = flag.String("distro", "", "The distribution to rank mirrors. Supported: \"Ubuntu\", \"Debian\", \"Arch\"")
@@ -34,8 +37,7 @@ func main() {
 		sourceType   = flag.String("source", "http", "The type of source for mirror list. Supported: \"http\", \"json\", \"txt\"")
 		sourceFile   = flag.String("file", "", "The file with the mirrors. Valid only for \"json\", \"txt\" source")
 		countryInput = flag.String("country", "", "The country where the system is located")
-		jsonExport   = flag.Bool("json", false, "Export results in JSON format")
-		// output = flag.String("output", "", "Write results to file")
+		output       = flag.String("output", "stdout", "The output format for the results. Supported: \"stdout\", \"json\", \"txt\", \"csv\"")
 	)
 	// Parse Flags
 	flag.Parse()
@@ -79,14 +81,15 @@ func main() {
 
 	// Validate Mirrors Source file
 	mirrorSourceFile = *sourceFile
-	if mirrorSourceType != mirrors.SourceHTTP {
-		if len(mirrorSourceFile) == 0 {
-			fmt.Fprintf(os.Stderr, "No Mirror file specified\n")
-			os.Exit(1)
-		}
-		fmt.Fprintf(os.Stderr, "Mirror Source File: %v\n", mirrorSourceFile)
-
+	if len(mirrorSourceFile) != 0 && mirrorSourceType == mirrors.SourceHTTP {
+		fmt.Fprintf(os.Stderr, "No valid source type specified for source file: %v\n", mirrorSourceFile)
+		os.Exit(1)
 	}
+	if len(mirrorSourceFile) == 0 && mirrorSourceType != mirrors.SourceHTTP {
+		fmt.Fprintf(os.Stderr, "No Mirror file specified\n")
+		os.Exit(1)
+	}
+	fmt.Fprintf(os.Stderr, "Mirror Source File: %v\n", mirrorSourceFile)
 
 	// Validate Mode
 	switch *mode {
@@ -99,10 +102,15 @@ func main() {
 		os.Exit(1)
 	}
 
-	// Validate Export
-	if *jsonExport {
-		fmt.Fprintf(os.Stderr, "Export option: JSON\n")
-		fmt.Fprintf(os.Stderr, "Unsupported export option\n")
+	// Validate Output
+	switch *output {
+	case "stdout":
+	case "json":
+	case "csv":
+		fmt.Fprintf(os.Stderr, "Output format: %v\n", *mode)
+	case "txt":
+	default:
+		fmt.Fprintf(os.Stderr, "Unsupported output format: %v\n", *output)
 		os.Exit(1)
 	}
 	fmt.Fprintf(os.Stderr, "----------------------\n")
@@ -138,21 +146,47 @@ func main() {
 	// DEBUG: Print Mirrors
 	// fmt.Printf("Mirrors (Updated): %v\n", distroMirrors)
 
+	// Operate based on selected mode
 	switch *mode {
 	case "rank":
 		// Sort Mirrors
 		distroMirrors.SortMirrors()
-		fmt.Printf("Ranked Mirrors:\n")
-		for i, distroMirror := range distroMirrors.Mirrors {
-			fmt.Printf("%v: %v %v %v\n", i, distroMirror.Country, distroMirror.URL, distroMirror.Statistics.AvgResponseTimeHTTP)
-		}
-		// Print Updated Mirrors JSON
-		// distroMirrorsJson, _ = json.Marshal(distroMirrors)
-		// fmt.Println(string(distroMirrorsJson))
+		fmt.Fprintf(os.Stderr, "Ranked Mirrors:\n")
 	case "best":
 		// Print best Mirror (based on HTTP response)
 		bestMirror := distroMirrors.BestMirror()
-		fmt.Printf("Best Mirror (relative):\n")
-		fmt.Printf("%v\n", bestMirror)
+		fmt.Fprintf(os.Stderr, "Best Mirror (relative):\n")
+		distroMirrors.Mirrors = []*mirrors.Mirror{&bestMirror}
 	}
+
+	// Output results
+	// TODO: Make them methods of Distribution Mirrors
+	// TODO: Create common output for all formats
+	switch *output {
+	case "stdout":
+		// TODO: Align whitespaces
+		fmt.Printf("%v %v %v %v %v\n", "Rank", "Distribution", "Country", "URL", "Avg Time")
+		for i, distroMirror := range distroMirrors.Mirrors {
+			fmt.Printf("%v: %v %v %v %v\n", i, distroMirrors.Distribution.Name(), distroMirror.Country, distroMirror.URL, distroMirror.Statistics.AvgResponseTimeHTTP)
+		}
+	case "json":
+		distroMirrorsJson, _ := json.Marshal(distroMirrors)
+		fmt.Println(string(distroMirrorsJson))
+	case "csv":
+		w := csv.NewWriter(os.Stdout)
+		defer w.Flush()
+		record := []string{"Rank", "Distribution", "Country", "URL", "Avg Time"}
+		if err := w.Write(record); err != nil {
+			fmt.Fprintf(os.Stderr, "error writing record to file: %v\n", err)
+			os.Exit(1)
+		}
+		for i, distroMirror := range distroMirrors.Mirrors {
+			record := []string{fmt.Sprintf("%v", i), distroMirrors.Distribution.Name(), distroMirror.Country, distroMirror.URL.String(), fmt.Sprintf("%v", distroMirror.Statistics.AvgResponseTimeHTTP)}
+			if err := w.Write(record); err != nil {
+				fmt.Fprintf(os.Stderr, "error writing record to file: %v\n", err)
+				os.Exit(1)
+			}
+		}
+	}
+
 }
