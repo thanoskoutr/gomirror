@@ -9,6 +9,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/schollz/progressbar/v3"
 	"github.com/thanoskoutr/gomirror/mirrors"
 )
 
@@ -60,6 +61,7 @@ func (d *DistributionMirrors) UpdateMirrors(source mirrors.MirrorSource, filenam
 }
 
 // TODO: Filter by host (1 host -> multiple mirrors (protocols))
+// TODO: Customize progress bar
 func (d *DistributionMirrors) UpdateMirrorStatistics(rounds int64) {
 	// Keep statistics from all rounds
 	allTimes := make([][]time.Duration, rounds)
@@ -74,6 +76,9 @@ func (d *DistributionMirrors) UpdateMirrorStatistics(rounds int64) {
 		var wg sync.WaitGroup
 		wg.Add(len(d.Mirrors))
 
+		// Create progress bar
+		bar := progressbar.Default(int64(len(d.Mirrors)), "Mirrors")
+
 		// For each mirror create a goroutine for parallel requests
 		for i, mirror := range d.Mirrors {
 			if mirror.Statistics == nil {
@@ -82,10 +87,11 @@ func (d *DistributionMirrors) UpdateMirrorStatistics(rounds int64) {
 			// Make request and update mirror statistics
 			go func(round int64, i int, mirror *mirrors.Mirror) {
 				totalTime := mirror.GetTime()
-				fmt.Fprintf(os.Stderr, "Mirror %v: Country: %v, URL: %v, Time: %v\n", i, mirror.Country, mirror.URL, totalTime)
+				// fmt.Fprintf(os.Stderr, "Mirror %v: Country: %v, URL: %v, Time: %v\n", i, mirror.Country, mirror.URL, totalTime)
 				d.Mirrors[i].Statistics.ResponseTimeHTTP = totalTime
 				allTimes[round][i] = totalTime
 				wg.Done()
+				bar.Add(1)
 			}(round, i, mirror)
 		}
 		wg.Wait()
@@ -98,7 +104,7 @@ func (d *DistributionMirrors) UpdateMirrorStatistics(rounds int64) {
 			accum[i] += allTimes[round][i]
 		}
 		d.Mirrors[i].Statistics.AvgResponseTimeHTTP = time.Duration(int64(accum[i]) / rounds)
-		fmt.Fprintf(os.Stderr, "Mirror %v: Country: %v, URL: %v, Time: %v, Avg Time: %v, Accum Time: %v\n", i, d.Mirrors[i].Country, d.Mirrors[i].URL, d.Mirrors[i].Statistics.ResponseTimeHTTP, d.Mirrors[i].Statistics.AvgResponseTimeHTTP, accum[i])
+		// fmt.Fprintf(os.Stderr, "Mirror %v: Country: %v, URL: %v, Time: %v, Avg Time: %v, Accum Time: %v\n", i, d.Mirrors[i].Country, d.Mirrors[i].URL, d.Mirrors[i].Statistics.ResponseTimeHTTP, d.Mirrors[i].Statistics.AvgResponseTimeHTTP, accum[i])
 	}
 
 }
