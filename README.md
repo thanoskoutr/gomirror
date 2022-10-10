@@ -8,6 +8,8 @@ It is build with usability, extensibility, and performance in mind. It can quick
 
 Its main usage is to get the available mirrors for the desired distribution (either through official website or from user input) and output the mirrors ranked or the best mirror based on the server HTTP responses.
 
+![gomirror Screenshot](./gomirror.png)
+
 > Note: This is a hobby project under development. Do not expect any stable functionalities until it has some features implement and some major coding redesigns. There are still a lot of features missing that will make this tool a robust tool that can be used for mirror ranking, under real circumstances.
 
 ## Supported Distributions
