@@ -1,0 +1,2203 @@
+{
+  "distribution": "Debian",
+  "urls": [
+    {
+      "country": "Argentina",
+      "country_code": "AR",
+      "url": "http://debian.unnoba.edu.ar/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc"
+    },
+    {
+      "country": "Armenia",
+      "country_code": "AM",
+      "url": "http://ftp.am.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Armenia",
+      "country_code": "AM",
+      "url": "http://mirrors.asnet.am/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://ftp.au.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://debian.mirror.serversaustralia.com.au/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://mirror.aarnet.edu.au/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://mirror.amaze.com.au/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://mirror.linux.org.au/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://mirror.overthewire.com.au/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel i386"
+    },
+    {
+      "country": "Australia",
+      "country_code": "AU",
+      "url": "http://mirror.realcompute.io/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://ftp.at.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://debian.anexia.at/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://debian.lagis.at/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://debian.mur.at/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://debian.sil.at/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://ftp.tu-graz.ac.at/mirror/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "http://mirror.alwyzon.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Belarus",
+      "country_code": "BY",
+      "url": "http://ftp.by.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Belarus",
+      "country_code": "BY",
+      "url": "http://ftp.byfly.by/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Belarus",
+      "country_code": "BY",
+      "url": "http://mirror.datacenter.by/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Belgium",
+      "country_code": "BE",
+      "url": "http://ftp.be.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Belgium",
+      "country_code": "BE",
+      "url": "http://ftp.belnet.be/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386 mips64el ppc64el"
+    },
+    {
+      "country": "Belgium",
+      "country_code": "BE",
+      "url": "http://mirror.as35701.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "url": "http://ftp.br.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x sparc"
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "url": "http://debian.c3sl.ufpr.br/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x sparc"
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "url": "http://debian.itsbrasil.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "url": "http://debian.pop-sc.rnp.br/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "url": "http://mirror.uepg.br/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Brazil",
+      "country_code": "BR",
+      "url": "http://mirror.unesp.br/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "url": "http://ftp.bg.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "url": "http://debian.ipacct.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "url": "http://debian.mnet.bg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386 mips64el"
+    },
+    {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "url": "http://debian.telecoms.bg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "url": "http://ftp.uni-sofia.bg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "url": "http://mirror.telepoint.bg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Cambodia",
+      "country_code": "KH",
+      "url": "http://mirror.sabay.com.kh/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "http://ftp.ca.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "http://debian.mirror.globo.tech/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "http://debian.mirror.iweb.ca/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "http://debian.mirror.rafal.ca/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "http://mirror.estone.ca/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "http://mirror.it.ubc.ca/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Chile",
+      "country_code": "CL",
+      "url": "http://ftp.cl.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Chile",
+      "country_code": "CL",
+      "url": "http://debian.redlibre.cl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mipsel powerpc s390x"
+    },
+    {
+      "country": "Chile",
+      "country_code": "CL",
+      "url": "http://mirror.insacom.cl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Chile",
+      "country_code": "CL",
+      "url": "http://mirror.ufro.cl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirror.nju.edu.cn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirrors.bfsu.edu.cn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirrors.huaweicloud.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirror.sjtu.edu.cn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirrors.neusoft.edu.cn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirrors.tuna.tsinghua.edu.cn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "China",
+      "country_code": "CN",
+      "url": "http://mirrors.ustc.edu.cn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Costa Rica",
+      "country_code": "CR",
+      "url": "http://debianmirror.una.ac.cr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Costa Rica",
+      "country_code": "CR",
+      "url": "http://mirrors.ucr.ac.cr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Croatia",
+      "country_code": "HR",
+      "url": "http://ftp.hr.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Croatia",
+      "country_code": "HR",
+      "url": "http://debian.carnet.hr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Croatia",
+      "country_code": "HR",
+      "url": "http://debian.iskon.hr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://ftp.cz.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://debian.mirror.web4u.cz/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://debian.superhosting.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://ftp.cvut.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips64el ppc64el"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://ftp.debian.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://ftp.sh.cvut.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://ftp.zcu.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 mips64el"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://merlin.fit.vutbr.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el"
+    },
+    {
+      "country": "Czech Republic",
+      "country_code": "CZ",
+      "url": "http://mirror.dkm.cz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Denmark",
+      "country_code": "DK",
+      "url": "http://ftp.dk.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Denmark",
+      "country_code": "DK",
+      "url": "http://mirror.asergo.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Denmark",
+      "country_code": "DK",
+      "url": "http://mirror.one.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Denmark",
+      "country_code": "DK",
+      "url": "http://mirrors.dotsrc.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Denmark",
+      "country_code": "DK",
+      "url": "http://mirrors.rackhosting.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armhf i386 ia64 kfreebsd-amd64 kfreebsd-i386 s390x"
+    },
+    {
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "http://mirrors.xtom.ee/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Finland",
+      "country_code": "FI",
+      "url": "http://ftp.fi.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Finland",
+      "country_code": "FI",
+      "url": "http://www.nic.funet.fi/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.fr.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://apt.tetaneutral.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://debian.apt-mirror.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armhf i386"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://debian.mirror.ate.info/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://debian.obspm.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://debian.polytech-lille.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386 mips64el powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://debian.proxad.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://debian.univ-tlse2.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://deb-mir1.naitways.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.ec-m.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.lip6.fr/pub/linux/distributions/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf i386 s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.rezopole.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.univ-pau.fr/linux/mirrors/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 mips64el ppc64el"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.u-picardie.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://ftp.u-strasbg.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386 powerpc"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://mirror.johnnybegood.fr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://mirror.plusserver.com/debian/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf i386 mips mipsel s390x"
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "http://mirrors.ircam.fr/pub/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Georgia",
+      "country_code": "GE",
+      "url": "http://debian.grena.ge/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.de.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://artfiles.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.charite.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.inf.tu-dresden.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.intergenia.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.mirror.iphh.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.mirror.lrz.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.netcologne.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.tu-bs.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://debian.uni-duisburg-essen.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.fau.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.gwdg.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.hosteurope.de/mirror/ftp.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.plusline.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp-stud.hs-esslingen.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.stw-bonn.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.tu-chemnitz.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.tu-clausthal.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.uni-bayreuth.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.uni-hannover.de/debian/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.uni-kl.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.uni-mainz.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.uni-stuttgart.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://ftp.wrz.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.de.leaseweb.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.dogado.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.eu.oneandone.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.informatik.tu-freiberg.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 mips64el ppc64el"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.ipb.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirrors.xtom.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.united-gameserver.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://mirror.wtnet.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://packages.hs-regensburg.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "http://pubmirror.plutex.de/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386"
+    },
+    {
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "http://debian.otenet.gr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Hong Kong",
+      "country_code": "HK",
+      "url": "http://ftp.hk.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Hong Kong",
+      "country_code": "HK",
+      "url": "http://mirror.xtom.com.hk/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Hungary",
+      "country_code": "HU",
+      "url": "http://ftp.hu.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Hungary",
+      "country_code": "HU",
+      "url": "http://ftp.bme.hu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Hungary",
+      "country_code": "HU",
+      "url": "http://ftp.fsn.hu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Hungary",
+      "country_code": "HU",
+      "url": "http://repo.jztkft.hu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Iceland",
+      "country_code": "IS",
+      "url": "http://ftp.is.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "url": "http://debian.mirror.net.in/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "url": "http://mirror.cse.iitk.ac.in/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386"
+    },
+    {
+      "country": "Indonesia",
+      "country_code": "ID",
+      "url": "http://kartolo.sby.datautama.net.id/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Indonesia",
+      "country_code": "ID",
+      "url": "http://kebo.pens.ac.id/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 mips64el powerpc ppc64el s390x"
+    },
+    {
+      "country": "Indonesia",
+      "country_code": "ID",
+      "url": "http://mirror.poliwangi.ac.id/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386"
+    },
+    {
+      "country": "Indonesia",
+      "country_code": "ID",
+      "url": "http://mr.heru.id/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Iran",
+      "country_code": "IR",
+      "url": "http://debian.asis.ai/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Iran",
+      "country_code": "IR",
+      "url": "http://mirrors.pardisco.co/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Israel",
+      "country_code": "IL",
+      "url": "http://mirror.isoc.org.il/pub/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "url": "http://ftp.it.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "url": "http://debian.connesi.it/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "url": "http://debian.mirror.garr.it/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "url": "http://ftp.linux.it/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "url": "http://giano.com.dist.unige.it/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf i386"
+    },
+    {
+      "country": "Italy",
+      "country_code": "IT",
+      "url": "http://mirror.units.it/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "url": "http://ftp.jp.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel i386 mips mipsel"
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "url": "http://ftp.kddilabs.jp/pub/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips64el mipsel"
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "url": "http://ftp.nara.wide.ad.jp/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel i386 mips mipsel"
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "url": "http://ftp.yz.yamagata-u.ac.jp/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "url": "http://mirrors.xtom.jp/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "http://mirror.hoster.kz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "http://mirror.ps.kz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Kenya",
+      "country_code": "KE",
+      "url": "http://debian.mirror.ac.ke/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Kenya",
+      "country_code": "KE",
+      "url": "http://debian.mirror.liquidtelecom.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Korea",
+      "country_code": "",
+      "url": "http://ftp.kr.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Korea",
+      "country_code": "",
+      "url": "http://ftp.kaist.ac.kr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Korea",
+      "country_code": "",
+      "url": "http://ftp.lanet.kr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Korea",
+      "country_code": "",
+      "url": "http://mirror.anigil.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Korea",
+      "country_code": "",
+      "url": "http://mirror.misakamikoto.network/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Latvia",
+      "country_code": "LV",
+      "url": "http://debian.koyanet.lv/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Latvia",
+      "country_code": "LV",
+      "url": "http://mirror.cloudhosting.lv/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Lithuania",
+      "country_code": "LT",
+      "url": "http://ftp.lt.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Lithuania",
+      "country_code": "LT",
+      "url": "http://debian.mirror.vu.lt/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Lithuania",
+      "country_code": "LT",
+      "url": "http://mirror.litnet.lt/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Lithuania",
+      "country_code": "LT",
+      "url": "http://mirror.vpsnet.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "url": "http://debian.mirror.root.lu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Macedonia, Republic of",
+      "country_code": "",
+      "url": "http://mirror.onevip.mk/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "http://ftp.md.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "http://mirror.as43289.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "http://mirrors.mivocloud.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Monaco",
+      "country_code": "MC",
+      "url": "http://debian.qontinuum.space/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://ftp.nl.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://debian.mirror.cambrium.nl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://debian.snt.utwente.nl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.duocast.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.i3d.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.nforce.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.nl.datapacket.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.nl.leaseweb.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.novg.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.seedvps.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386 mips64el ppc64el"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirror.serverius.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "http://mirrors.xtom.nl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "New Caledonia",
+      "country_code": "NC",
+      "url": "http://ftp.nc.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "New Caledonia",
+      "country_code": "NC",
+      "url": "http://debian.nautile.nc/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "New Caledonia",
+      "country_code": "NC",
+      "url": "http://mirror.lagoon.nc/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "url": "http://ftp.nz.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "url": "http://linux.purple-cat.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "New Zealand",
+      "country_code": "NZ",
+      "url": "http://mirror.fsmg.org.nz/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Norway",
+      "country_code": "NO",
+      "url": "http://ftp.no.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Norway",
+      "country_code": "NO",
+      "url": "http://ftp.uio.no/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Philippines",
+      "country_code": "PH",
+      "url": "http://mirror.rise.ph/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Poland",
+      "country_code": "PL",
+      "url": "http://ftp.pl.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Poland",
+      "country_code": "PL",
+      "url": "http://debian.inhost.pro/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Poland",
+      "country_code": "PL",
+      "url": "http://ftp.agh.edu.pl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Poland",
+      "country_code": "PL",
+      "url": "http://ftp.icm.edu.pl/pub/Linux/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Poland",
+      "country_code": "PL",
+      "url": "http://ftp.task.gda.pl/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "url": "http://ftp.pt.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "url": "http://debian.uevora.pt/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "url": "http://ftp.eq.uc.pt/software/Linux/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "url": "http://ftp.rnl.tecnico.ulisboa.pt/pub/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "url": "http://mirrors.ptisp.pt/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Portugal",
+      "country_code": "PT",
+      "url": "http://mirrors.up.pt/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Réunion",
+      "country_code": "RE",
+      "url": "http://debian.mithril.re/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirror.flokinet.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirror.linux.ro/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirrors.hostico.ro/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirrors.layerbridge.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirrors.nav.ro/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirrors.nxthost.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 i386 mips64el ppc64el"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirrors.pidginhost.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Romania",
+      "country_code": "RO",
+      "url": "http://mirrors.xservers.ro/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 mips64el powerpc ppc64el s390x"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://ftp.ru.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://ftp.psn.ru/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel i386 mips64el"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://mirror.corbina.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://mirror.docker.ru/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://mirror.mephi.ru/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://mirrors.powernet.com.ru/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://mirror.surf/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Russia",
+      "country_code": "RU",
+      "url": "http://mirror.truenetwork.ru/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Serbia",
+      "country_code": "RS",
+      "url": "http://mirror.pmf.kg.ac.rs/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armhf i386 kfreebsd-amd64"
+    },
+    {
+      "country": "Singapore",
+      "country_code": "SG",
+      "url": "http://mirror.0x.sg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Singapore",
+      "country_code": "SG",
+      "url": "http://mirror.coganng.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386"
+    },
+    {
+      "country": "Singapore",
+      "country_code": "SG",
+      "url": "http://mirror.djvg.sg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Singapore",
+      "country_code": "SG",
+      "url": "http://mirror.sg.gs/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Singapore",
+      "country_code": "SG",
+      "url": "http://mirror.soonkeat.sg/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Slovakia",
+      "country_code": "SK",
+      "url": "http://ftp.sk.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Slovakia",
+      "country_code": "SK",
+      "url": "http://ftp.antik.sk/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Slovakia",
+      "country_code": "SK",
+      "url": "http://ftp.debian.sk/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Slovenia",
+      "country_code": "SI",
+      "url": "http://ftp.si.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "South Africa",
+      "country_code": "ZA",
+      "url": "http://ftp.is.co.za/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "South Africa",
+      "country_code": "ZA",
+      "url": "http://mirror.hostafrica.co.za/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://ftp.es.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mipsel powerpc"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://debian.grn.cat/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://debian.redimadrid.es/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://debian.redparra.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386 mips64el"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://debian.uvigo.es/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://ftp.caliu.cat/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://ftp.udc.es/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://repo.ifca.es/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://softlibre.unizar.es/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "http://ulises.hostalia.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mipsel powerpc"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://ftp.se.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://debian.lth.se/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://debian.mirror.su.se/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://ftp.acc.umu.se/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://ftpmirror1.infania.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://mirrors.glesys.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "http://mirror.zetup.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://ftp.ch.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://debian.ethz.ch/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://mirror1.infomaniak.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://mirror2.infomaniak.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://mirror.init7.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://mirror.iway.ch/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Switzerland",
+      "country_code": "CH",
+      "url": "http://mirror.sinavps.ch/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "Taiwan",
+      "country_code": "TW",
+      "url": "http://ftp.tw.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Taiwan",
+      "country_code": "TW",
+      "url": "http://debian.csie.ncku.edu.tw/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Taiwan",
+      "country_code": "TW",
+      "url": "http://debian.csie.ntu.edu.tw/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Taiwan",
+      "country_code": "TW",
+      "url": "http://ftp.ntou.edu.tw/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Taiwan",
+      "country_code": "TW",
+      "url": "http://opensource.nchc.org.tw/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Taiwan",
+      "country_code": "TW",
+      "url": "http://tw1.mirror.blendbyte.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Thailand",
+      "country_code": "TH",
+      "url": "http://ftp.debianclub.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Thailand",
+      "country_code": "TH",
+      "url": "http://mirror.applebred.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 mips64el"
+    },
+    {
+      "country": "Thailand",
+      "country_code": "TH",
+      "url": "http://mirror.kku.ac.th/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Turkey",
+      "country_code": "TR",
+      "url": "http://debian.gnu.gen.tr/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Ukraine",
+      "country_code": "UA",
+      "url": "http://debian.astra.in.ua/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Ukraine",
+      "country_code": "UA",
+      "url": "http://debian.netforce.hosting/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "Ukraine",
+      "country_code": "UA",
+      "url": "http://debian.volia.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Ukraine",
+      "country_code": "UA",
+      "url": "http://fastmirror.pp.ua/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "Ukraine",
+      "country_code": "UA",
+      "url": "http://mirror.mirohost.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://ftp.uk.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://debian.mirrors.uk2.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armhf i386 ia64 mips64el ppc64el"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://debian.mirror.uk.sargasso.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://free.hands.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://ftp.ticklers.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirror.bytemark.co.uk/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirror.lchost.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirror.ox.ac.uk/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirror.positive-internet.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armhf i386 s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirrors.coreix.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirrorservice.org/sites/ftp.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirrors.m247.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirror.sov.uk.goscomb.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armhf i386 s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://mirror.vorboss.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "http://ukdebian.mirror.anlx.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://ftp.us.debian.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://debian-archive.trafficmanager.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 i386"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://debian.cs.binghamton.edu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://debian.gtisc.gatech.edu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390 s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://debian.osuosl.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirror.dal.nexril.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirror.keystealth.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.accretive-networks.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.advancedhosters.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armel armhf hurd-i386 i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirror.siena.edu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.lug.mtu.edu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.namecheap.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.ocf.berkeley.edu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirror.steadfast.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 armhf i386 s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.wikimedia.org/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirrors.xtom.com/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirror.us.leaseweb.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://mirror.us.oneandone.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://repo.ialab.dsu.edu/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "United States",
+      "country_code": "US",
+      "url": "http://us.mirror.nsec.pt/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Vietnam",
+      "country_code": "VN",
+      "url": "http://debian.xtdv.net/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    },
+    {
+      "country": "Vietnam",
+      "country_code": "VN",
+      "url": "http://mirror.bizflycloud.vn/debian/",
+      "protocol": "http",
+      "architectures": "amd64 arm64 armel armhf i386 mips mips64el mipsel powerpc ppc64el s390x"
+    }
+  ]
+}
