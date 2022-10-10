@@ -115,7 +115,7 @@ func (m Mirror) GetStatus() int {
 // TODO: Add errors to separate file
 func (m Mirror) GetTime() time.Duration {
 	// Unsupported Protocols
-	if m.URL.Scheme != "http" && m.URL.Scheme != "https" && m.URL.Scheme != "ftp" {
+	if m.URL.Scheme != "http" && m.URL.Scheme != "https" {
 		// log.Println("Error: Unsupported Protocol: ", m.URL.Scheme)
 		return math.MaxInt64
 	}
