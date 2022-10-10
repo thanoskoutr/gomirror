@@ -1,0 +1,69 @@
+{
+  "distribution": "Ubuntu",
+  "urls": [
+    {
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "http://ftp.cc.uoc.gr/mirrors/linux/ubuntu/packages/",
+      "protocol": "http",
+      "statistics": {
+        "http_response": "36.953627ms",
+        "ping_response": "0s",
+        "avg_http_response": "36.953627ms"
+      }
+    },
+    {
+      "country": "France",
+      "country_code": "FR",
+      "url": "https://mirror.ubuntu.ikoula.com/",
+      "protocol": "https",
+      "statistics": {
+        "http_response": "165.957675ms",
+        "ping_response": "0s",
+        "avg_http_response": "165.957675ms"
+      }
+    },
+    {
+      "url": "http://mirrors.dc.clear.net.ar/ubuntu/",
+      "protocol": "http",
+      "statistics": {
+        "http_response": "542.089493ms",
+        "ping_response": "0s",
+        "avg_http_response": "542.089493ms"
+      }
+    },
+    {
+      "country": "Argentina",
+      "country_code": "AR",
+      "url": "https://mirrors.dc.clear.net.ar/ubuntu/",
+      "protocol": "https",
+      "statistics": {
+        "http_response": "1.087297349s",
+        "ping_response": "0s",
+        "avg_http_response": "1.087297349s"
+      }
+    },
+    {
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "",
+      "protocol": "",
+      "statistics": {
+        "http_response": "2562047h47m16.854775807s",
+        "ping_response": "0s",
+        "avg_http_response": "2562047h47m16.854775807s"
+      }
+    },
+    {
+      "country": "South Africa",
+      "country_code": "ZA",
+      "url": "ftp://mirror.wiru.co.za/ubuntu/",
+      "protocol": "ftp",
+      "statistics": {
+        "http_response": "2562047h47m16.854775807s",
+        "ping_response": "0s",
+        "avg_http_response": "2562047h47m16.854775807s"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Arch - /etc/pacman.d/mirrorlist
+Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch
+
+# Debian - /etc/apt/sources.list
+deb http://ftp.us.debian.org/debian/ jessie main
+deb-src http://ftp.us.debian.org/debian/ jessie main
+
+# Ubuntu - /etc/apt/sources.list
+deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-9 main

@@ -1,0 +1,4 @@
+Rank,Distribution,Country,URL,Avg Time
+0,Ubuntu,Austria,ftp://mirror.kumi.systems/ubuntu/,115.722µs
+1,Ubuntu,Greece,http://ftp.cc.uoc.gr/mirrors/linux/ubuntu/packages/,36.748932ms
+2,Ubuntu,France,https://mirror.ubuntu.ikoula.com/,168.186056ms
