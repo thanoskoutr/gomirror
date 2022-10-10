@@ -25,6 +25,12 @@
       "country_code": "FR",
       "url": "https://mirror.ubuntu.ikoula.com/",
       "protocol": "https"
+    },
+    {
+      "country": "South Africa",
+      "country_code": "ZA",
+      "url": "ftp://mirror.wiru.co.za/ubuntu/",
+      "protocol": "ftp"
     }
   ]
 }
