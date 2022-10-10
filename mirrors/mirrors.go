@@ -177,14 +177,14 @@ func (s MirrorStatistics) String() string {
 // TODO: Handle field types for Nanoseconds (int32, float32, string)
 func (s *MirrorStatistics) MarshalJSON() ([]byte, error) {
 	return json.Marshal(&struct {
-		ResponseTimeHTTP    int `json:"http_response,omitempty"`
-		ResponseTimePing    int `json:"ping_response,omitempty"`
-		AvgResponseTimeHTTP int `json:"avg_http_response,omitempty"`
-		Speed               int `json:"speed,omitempty"`
+		ResponseTimeHTTP    string `json:"http_response,omitempty"`
+		ResponseTimePing    string `json:"ping_response,omitempty"`
+		AvgResponseTimeHTTP string `json:"avg_http_response,omitempty"`
+		Speed               int    `json:"speed,omitempty"`
 	}{
-		ResponseTimeHTTP:    int(s.ResponseTimeHTTP.Nanoseconds()),
-		ResponseTimePing:    int(s.ResponseTimePing.Nanoseconds()),
-		AvgResponseTimeHTTP: int(s.AvgResponseTimeHTTP.Nanoseconds()),
+		ResponseTimeHTTP:    s.ResponseTimeHTTP.String(),
+		ResponseTimePing:    s.ResponseTimePing.String(),
+		AvgResponseTimeHTTP: s.AvgResponseTimeHTTP.String(),
 		Speed:               s.Speed,
 	})
 }
