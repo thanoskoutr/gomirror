@@ -112,16 +112,18 @@ func (m Mirror) GetStatus() int {
 // TODO: Check for server delays (on multiple requests)
 // TODO: Error handling
 // TODO: Handle other protocols
+// TODO: Add errors to separate file
 func (m Mirror) GetTime() time.Duration {
 	// Unsupported Protocols
 	if m.URL.Scheme != "http" && m.URL.Scheme != "https" && m.URL.Scheme != "ftp" {
-		log.Println("Error: Unsupported Protocol: ", m.URL.Scheme)
+		// log.Println("Error: Unsupported Protocol: ", m.URL.Scheme)
 		return math.MaxInt64
 	}
 	// Create new request
 	req, err := http.NewRequest("GET", m.URL.String(), nil)
 	if err != nil {
-		log.Fatal("Error: Can not create request: ", err)
+		// log.Println("Error: Can not create request: ", err)
+		return math.MaxInt64
 	}
 	// Initialize an HTTP tracer
 	trace := &httptrace.ClientTrace{}
@@ -134,8 +136,8 @@ func (m Mirror) GetTime() time.Duration {
 	start := time.Now()
 	_, err = client.Do(req)
 	if err != nil {
-		log.Println("Error: Can not fetch mirror: ", err)
-		return time.Since(start)
+		// log.Println("Error: Can not fetch mirror: ", err)
+		return math.MaxInt64
 	}
 	return time.Since(start)
 }
